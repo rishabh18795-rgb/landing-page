@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="color-scheme" content="light only">
-    <meta name="description" content="rishabh meta
+    <meta name="description" content="Meta Ads Mastery eBook by Rishabh Shukla — Learn to run profitable Facebook & Instagram Ads and build a Shopify store with consistent sales.">
+    <title>Meta Ads Mastery — Run Profitable Facebook & Instagram Ads | Rishabh Shukla</title>
 
     <!-- Meta Pixel Code -->
     <script>
@@ -27,10 +28,10 @@
             s.parentNode.insertBefore(t, s)
         }(window,
             document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '363077552110628');
+        fbq('init', 'PASTE_YOUR_PIXEL_ID_HERE');
         fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=363077552110628&ev=PageView&noscript=1"/></noscript>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=PASTE_YOUR_PIXEL_ID_HERE&ev=PageView&noscript=1"/></noscript>
     <!-- End Meta Pixel Code -->
 
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700;800;900&display=swap" rel="stylesheet">
@@ -58,1355 +59,235 @@
             --font: 'Urbanist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box
-        }
-
-        html {
-            scroll-behavior: smooth
-        }
-
-        body {
-            font-family: var(--font);
-            background: var(--bg);
-            color: var(--ink);
-            line-height: 1.55;
-            -webkit-font-smoothing: antialiased;
-            overflow-x: hidden;
-        }
-
-        img {
-            max-width: 100%;
-            display: block;
-            height: auto
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit
-        }
-
-        .wrap {
-            max-width: var(--maxw);
-            margin: 0 auto;
-            padding: 0 20px
-        }
-
-        .section {
-            padding: 28px 0
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box }
+        html { scroll-behavior: smooth }
+        body { font-family: var(--font); background: var(--bg); color: var(--ink); line-height: 1.55; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+        img { max-width: 100%; display: block; height: auto }
+        a { text-decoration: none; color: inherit }
+        .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 20px }
+        .section { padding: 28px 0 }
 
         @media(max-width:640px) {
-            .section {
-                padding: 14px 0
-            }
-            .wrap {
-                padding: 0 20px
-            }
-            .hero {
-                padding-top: 28px;
-                padding-bottom: 16px
-            }
-            .hero h1 {
-                line-height: 1.25
-            }
+            .section { padding: 14px 0 }
+            .wrap { padding: 0 20px }
+            .hero { padding-top: 28px; padding-bottom: 16px }
+            .hero h1 { line-height: 1.25 }
         }
 
         /* ===== TOP STRIP ===== */
-
-        .topbar {
-            background: linear-gradient(90deg, var(--claude), var(--claude-deep));
-            color: #fff;
-            text-align: center;
-            padding: 10px 16px;
-            font-size: 13.5px;
-            font-weight: 600;
-            letter-spacing: .2px;
-            display: flex;
-            gap: 14px;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .topbar .stars {
-            color: #FFE08A;
-            letter-spacing: 1px
-        }
-
-        @media(max-width:640px) {
-            .topbar {
-                font-size: 12px;
-                gap: 8px
-            }
-        }
+        .topbar { background: linear-gradient(90deg, var(--claude), var(--claude-deep)); color: #fff; text-align: center; padding: 10px 16px; font-size: 13.5px; font-weight: 600; letter-spacing: .2px; display: flex; gap: 14px; justify-content: center; align-items: center; flex-wrap: wrap; }
+        .topbar .stars { color: #FFE08A; letter-spacing: 1px }
+        @media(max-width:640px) { .topbar { font-size: 12px; gap: 8px } }
 
         /* ===== HERO ===== */
+        .hero { padding-top: 26px; padding-bottom: 30px; text-align: center }
+        .eyebrow { display: inline-flex; align-items: center; gap: 8px; background: var(--claude-soft); color: var(--claude-deep); border: 1px solid #EED8CC; font-weight: 700; font-size: 13px; letter-spacing: .3px; padding: 8px 16px; border-radius: 999px; margin-bottom: 22px; }
+        .hero h1 { font-size: clamp(28px, 5vw, 48px); line-height: 1.14; font-weight: 800; letter-spacing: -.5px; max-width: 940px; margin: 0 auto 16px; }
+        .hero h1 .hl-blue { background-color: var(--claude); color: #fff; padding: 2px 6px; border-radius: 6px; display: inline-block; margin-bottom: 6px }
+        .hero .sub { font-size: clamp(15px, 2.2vw, 18px); color: var(--ink-soft); max-width: 680px; margin: 0 auto 8px; font-weight: 500; }
+        .note { font-size: 14px; color: var(--ink-mute); padding-top: 5px; margin-bottom: 26px; text-align: center }
+        .hero .note { font-size: 14px; color: var(--ink-mute); margin-bottom: 26px; text-align: center }
 
-        .hero {
-            padding-top: 26px;
-            padding-bottom: 30px;
-            text-align: center
-        }
+        /* ===== HERO GRID ===== */
+        .hero-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 30px; align-items: center; margin-top: 20px; }
+        .hero-right { display: flex; flex-direction: column; gap: 16px; text-align: center; }
+        .hero-right .note { text-align: center }
+        @media(max-width:768px) { .hero-grid { grid-template-columns: 1fr; gap: 20px } }
 
-        .eyebrow {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: var(--claude-soft);
-            color: var(--claude-deep);
-            border: 1px solid #EED8CC;
-            font-weight: 700;
-            font-size: 13px;
-            letter-spacing: .3px;
-            padding: 8px 16px;
-            border-radius: 999px;
-            margin-bottom: 22px;
-        }
-
-        .hero h1 {
-            font-size: clamp(28px, 5vw, 50px);
-            line-height: 1.12;
-            font-weight: 800;
-            letter-spacing: -.5px;
-            max-width: 940px;
-            margin: 0 auto 16px;
-        }
-
-        .hero h1 .hl {
-            color: var(--claude)
-        }
-
-        .hero h1 .hl-blue {
-            background-color: var(--claude);
-            color: #fff;
-            padding: 2px 6px;
-            border-radius: 6px;
-            display: inline-block;
-            margin-bottom: 6px
-        }
-
-        .hero .sub {
-            font-size: clamp(15px, 2.2vw, 18px);
-            color: var(--ink-soft);
-            max-width: 680px;
-            margin: 0 auto 8px;
-            font-weight: 500;
-        }
-
-        .note {
-            font-size: 14px;
-            color: var(--ink-mute);
-            padding-top: 5px;
-            margin-bottom: 26px;
-            text-align: center
-        }
-
-        .hero .note {
-            font-size: 14px;
-            color: var(--ink-mute);
-            margin-bottom: 26px;
-            text-align: center
-        }
-
-        .hero-img {
-            border-radius: var(--radius);
+        /* ===== BOOK COVER MOCKUP (no image needed) ===== */
+        .book-cover {
+            aspect-ratio: 3/4;
+            max-width: 320px;
+            margin: 0 auto;
+            border-radius: 12px;
+            background: linear-gradient(160deg, var(--claude-deep), var(--claude));
             box-shadow: var(--shadow);
-            overflow: hidden;
             border: 1px solid var(--line);
-        }
-
-        /* ===== HERO GRID (left image, right info) ===== */
-
-        .hero-grid {
-            display: grid;
-            grid-template-columns: 1.1fr 0.9fr;
-            gap: 30px;
-            align-items: start;
-            margin-top: 20px;
-        }
-
-        .hero-right {
+            color: #fff;
             display: flex;
             flex-direction: column;
-            gap: 16px;
-            text-align: center;
-        }
-
-        .hero-right .note {
-            text-align: center
-        }
-
-        @media(max-width:768px) {
-            .hero-grid {
-                grid-template-columns: 1fr;
-                gap: 20px
-            }
-        }
-
-        /* ===== DATE CARD & INFO ROW (like claude-dm) ===== */
-
-        .dm-date-card {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            background: var(--bg-card);
-            border: 1px solid var(--line);
-            border-radius: 16px;
-            box-shadow: var(--shadow-soft);
-            padding: 16px;
-        }
-
-        .dm-cal-badge {
-            width: 64px;
-            border-radius: 12px;
+            justify-content: space-between;
+            padding: 26px 22px;
+            position: relative;
             overflow: hidden;
-            border: 1px solid var(--line);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, .03);
-            text-align: center;
-            background: #fff;
-            flex-shrink: 0;
         }
+        .book-cover::before {
+            content: "";
+            position: absolute; inset: 10px;
+            border: 1px solid rgba(255,255,255,.35);
+            border-radius: 6px;
+            pointer-events: none;
+        }
+        .book-cover .bc-tag { font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; opacity: .9 }
+        .book-cover .bc-title { font-size: 26px; font-weight: 900; line-height: 1.15; margin-top: 10px }
+        .book-cover .bc-sub { font-size: 13px; opacity: .92; margin-top: 10px; font-weight: 600 }
+        .book-cover .bc-author { font-size: 13px; font-weight: 700; margin-top: auto; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.3) }
 
-        .dm-cal-month {
-            background: var(--claude);
-            color: #fff;
-            font-weight: 700;
-            letter-spacing: .08em;
-            font-size: 11px;
-            line-height: 26px;
-            text-transform: uppercase;
-        }
+        /* ===== PRICE CARD ===== */
+        .price-card { display: flex; align-items: center; justify-content: center; gap: 16px; background: var(--bg-card); border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--shadow-soft); padding: 18px; }
+        .price-card .now { font-size: 34px; font-weight: 900; color: var(--claude-deep) }
+        .price-card .was { font-size: 18px; color: var(--ink-mute); text-decoration: line-through; font-weight: 600 }
+        .price-card .off { background: var(--green); color: #fff; font-size: 12px; font-weight: 800; padding: 4px 10px; border-radius: 999px }
 
-        .dm-cal-day {
-            color: var(--ink);
-            font-weight: 800;
-            font-size: 22px;
-            line-height: 40px;
-        }
-
-        .dm-date-info .dm-date-line {
-            font-size: 20px;
-            font-weight: 700;
-            color: var(--ink);
-        }
-
-        .dm-date-info .dm-time-line {
-            color: var(--ink-soft);
-            font-weight: 600;
-            margin-top: 4px;
-            font-size: 15px;
-        }
-
-        .dm-info-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 16px;
-        }
-
-        .dm-info-card {
-            background: var(--bg-card);
-            border: 1px solid var(--line);
-            border-radius: 16px;
-            box-shadow: var(--shadow-soft);
-            padding: 16px;
-        }
-
-        .dm-info-card .dm-label {
-            color: var(--ink-mute);
-            font-size: 13px;
-            margin-bottom: 6px;
-            text-transform: uppercase;
-            letter-spacing: .05em;
-            font-weight: 600;
-        }
-
-        .dm-info-card .dm-value {
-            font-size: 18px;
-            font-weight: 700;
-            color: var(--ink);
-        }
+        .dm-info-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        .dm-info-card { background: var(--bg-card); border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--shadow-soft); padding: 16px; }
+        .dm-info-card .dm-label { color: var(--ink-mute); font-size: 13px; margin-bottom: 6px; text-transform: uppercase; letter-spacing: .05em; font-weight: 600; }
+        .dm-info-card .dm-value { font-size: 18px; font-weight: 700; color: var(--ink); }
 
         .cta-big {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background: var(--claude);
-            color: #fff;
-            font-weight: 700;
-            font-size: 18px;
-            padding: 18px 24px;
-            border-radius: 12px;
-            border: none;
-            cursor: pointer;
-            box-shadow: 0 10px 24px rgba(217, 119, 87, .25);
-            transition: transform .2s, box-shadow .2s;
-            width: 100%;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-            isolation: isolate;
-            animation: cta-pulse 5s ease-in-out infinite;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            background: var(--claude); color: #fff; font-weight: 700; font-size: 18px; padding: 18px 24px;
+            border-radius: 12px; border: none; cursor: pointer; box-shadow: 0 10px 24px rgba(217, 119, 87, .25);
+            transition: transform .2s, box-shadow .2s; width: 100%; text-align: center; position: relative;
+            overflow: hidden; isolation: isolate; animation: cta-pulse 5s ease-in-out infinite;
         }
-
-        .cta-big:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 12px 28px rgba(217, 119, 87, .35)
-        }
-
+        .cta-big:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(217, 119, 87, .35) }
         .cta-big::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: -150%;
-            width: 50%;
-            height: 100%;
-            pointer-events: none;
-            background: linear-gradient(120deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .45) 45%, rgba(255, 255, 255, 0) 100%);
-            transform: skewX(-20deg);
-            animation: btn-shine 3.6s ease-in-out infinite;
-            animation-delay: 1s;
+            content: ""; position: absolute; top: 0; left: -150%; width: 50%; height: 100%; pointer-events: none;
+            background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,.45) 45%, rgba(255,255,255,0) 100%);
+            transform: skewX(-20deg); animation: btn-shine 3.6s ease-in-out infinite; animation-delay: 1s;
         }
+        @keyframes btn-shine { 0% { left: -150% } 55% { left: 130% } 100% { left: 130% } }
+        @keyframes cta-pulse { 0%,100% { transform: scale(1) } 50% { transform: scale(1.01) } }
+        .cta-big small { font-size: 13px; font-weight: 500; opacity: .9; margin-top: 4px }
 
-        @keyframes btn-shine {
-            0% {
-                left: -150%
-            }
-            55% {
-                left: 130%
-            }
-            100% {
-                left: 130%
-            }
-        }
+        .cta-block { background: linear-gradient(135deg, var(--claude-tint), #fff); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px 24px; text-align: center; box-shadow: var(--shadow-soft); max-width: 720px; margin: 0 auto; }
+        .cta-block .big { font-size: clamp(17px, 2.4vw, 21px); font-weight: 800; margin-bottom: 6px }
+        .cta-block .small { font-size: 14px; color: var(--ink-mute); margin-bottom: 18px }
 
-        @keyframes cta-pulse {
-            0%,
-            100% {
-                transform: scale(1)
-            }
-            50% {
-                transform: scale(1.01)
-            }
-        }
+        .btn { display: inline-flex; align-items: center; justify-content: center; background: var(--claude); color: #fff; font-weight: 700; font-size: 17px; letter-spacing: .3px; padding: 16px 42px; border-radius: 12px; border: none; cursor: pointer; box-shadow: 0 10px 24px rgba(217, 119, 87, .25); transition: transform .2s, box-shadow .2s; position: relative; overflow: hidden; }
+        .btn::after { content: ""; position: absolute; top: 0; left: -150%; width: 50%; height: 100%; pointer-events: none; background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,.45) 45%, rgba(255,255,255,0) 100%); transform: skewX(-20deg); animation: btn-shine 3.6s ease-in-out infinite; animation-delay: 1s; }
+        .btn:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(217, 119, 87, .35) }
+        .btn.full { width: 100%; max-width: 420px }
 
-        .cta-big small {
-            font-size: 13px;
-            font-weight: 500;
-            opacity: .9;
-            margin-top: 4px
-        }
+        .shead { text-align: center; margin-bottom: 34px }
+        .shead h2 { font-size: clamp(23px, 3.6vw, 34px); font-weight: 800; letter-spacing: -.4px; line-height: 1.18; max-width: 820px; margin: 0 auto 10px }
+        .shead h2 .hl { color: var(--claude) }
+        .shead p { font-size: 15.5px; color: var(--ink-mute); max-width: 600px; margin: 0 auto }
 
-        /* ===== CTA BLOCK (repeated) ===== */
+        /* ===== STATS STRIP (real case-study numbers, no images needed) ===== */
+        .stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px }
+        @media(max-width:740px) { .stat-grid { grid-template-columns: repeat(2, 1fr) } }
+        .stat-card { background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius-sm); box-shadow: var(--shadow-soft); padding: 22px 14px; text-align: center; }
+        .stat-card .num { font-size: clamp(22px,3vw,30px); font-weight: 900; color: var(--claude-deep) }
+        .stat-card .lbl { font-size: 13px; color: var(--ink-mute); font-weight: 600; margin-top: 4px }
 
-        .cta-block {
-            background: linear-gradient(135deg, var(--claude-tint), #fff);
-            border: 1px solid var(--line);
-            border-radius: var(--radius);
-            padding: 28px 24px;
-            text-align: center;
-            box-shadow: var(--shadow-soft);
-            max-width: 720px;
-            margin: 0 auto;
-        }
+        .ratingline { text-align: center; margin-top: 26px }
+        .ratingline .stars { color: var(--gold); font-size: 26px; letter-spacing: 3px }
+        .ratingline .score { font-weight: 800; font-size: 18px; margin-top: 4px }
+        .ratingline .count { color: var(--ink-mute); font-size: 14px }
 
-        .cta-block .big {
-            font-size: clamp(17px, 2.4vw, 21px);
-            font-weight: 800;
-            margin-bottom: 6px
-        }
+        /* ===== CORE / TOOLS ===== */
+        .claude-core { background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius); padding: 30px 26px; box-shadow: var(--shadow-soft); display: flex; gap: 24px; align-items: center; margin-bottom: 24px; }
+        @media(max-width:680px) { .claude-core { flex-direction: column; text-align: center; padding: 26px 20px } }
+        .claude-core .logo { width: 96px; height: 96px; flex: 0 0 96px; border-radius: 20px; background: var(--claude-soft); display: flex; align-items: center; justify-content: center; border: 1px solid #EED8CC; font-size: 40px; }
+        .claude-core h3 { font-size: 13px; font-weight: 800; color: var(--claude-deep); text-transform: uppercase; letter-spacing: .6px; margin-bottom: 4px }
+        .claude-core h4 { font-size: 21px; font-weight: 800; margin-bottom: 8px }
+        .claude-core p { font-size: 15px; color: var(--ink-soft); max-width: 680px }
 
-        .cta-block .small {
-            font-size: 14px;
-            color: var(--ink-mute);
-            margin-bottom: 18px
-        }
+        .tools-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px }
+        @media(max-width:820px) { .tools-grid { grid-template-columns: repeat(3, 1fr) } }
+        @media(max-width:520px) { .tools-grid { grid-template-columns: repeat(2, 1fr) } }
+        .tool { background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 18px 12px; text-align: center; box-shadow: var(--shadow-soft); display: flex; flex-direction: column; align-items: center; gap: 10px; transition: transform .15s; }
+        .tool:hover { transform: translateY(-3px) }
+        .tool .ti { font-size: 28px }
+        .tool .tn { font-size: 13.5px; font-weight: 700; color: var(--ink) }
 
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            background: var(--claude);
-            color: #fff;
-            font-weight: 700;
-            font-size: 17px;
-            letter-spacing: .3px;
-            padding: 16px 42px;
-            border-radius: 12px;
-            border: none;
-            cursor: pointer;
-            box-shadow: 0 10px 24px rgba(217, 119, 87, .25);
-            transition: transform .2s, box-shadow .2s;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .btn::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: -150%;
-            width: 50%;
-            height: 100%;
-            pointer-events: none;
-            background: linear-gradient(120deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .45) 45%, rgba(255, 255, 255, 0) 100%);
-            transform: skewX(-20deg);
-            animation: btn-shine 3.6s ease-in-out infinite;
-            animation-delay: 1s;
-        }
-
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 12px 28px rgba(217, 119, 87, .35)
-        }
-
-        .btn.full {
-            width: 100%;
-            max-width: 420px
-        }
-
-        /* ===== SECTION HEADERS ===== */
-
-        .shead {
-            text-align: center;
-            margin-bottom: 34px
-        }
-
-        .shead h2 {
-            font-size: clamp(23px, 3.6vw, 34px);
-            font-weight: 800;
-            letter-spacing: -.4px;
-            line-height: 1.18;
-            max-width: 820px;
-            margin: 0 auto 10px
-        }
-
-        .shead h2 .hl {
-            color: var(--claude)
-        }
-
-        .shead p {
-            font-size: 15.5px;
-            color: var(--ink-mute);
-            max-width: 600px;
-            margin: 0 auto
-        }
-
-        /* ===== TESTIMONIAL STRIP ===== */
-
-        .tgrid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 16px
-        }
-
-        @media(max-width:820px) {
-            .tgrid {
-                grid-template-columns: repeat(2, 1fr)
-            }
-        }
-
-        @media(max-width:520px) {
-            .tgrid {
-                grid-template-columns: 1fr
-            }
-        }
-
-        .tgrid img {
-            border-radius: var(--radius-sm);
-            border: 1px solid var(--line);
-            box-shadow: var(--shadow-soft);
-            width: 100%
-        }
-
-        .ratingline {
-            text-align: center;
-            margin-top: 26px
-        }
-
-        .ratingline .stars {
-            color: var(--gold);
-            font-size: 26px;
-            letter-spacing: 3px
-        }
-
-        .ratingline .score {
-            font-weight: 800;
-            font-size: 18px;
-            margin-top: 4px
-        }
-
-        .ratingline .count {
-            color: var(--ink-mute);
-            font-size: 14px
-        }
-
-        /* ===== POWERED BY CLAUDE / TOOLS ===== */
-
-        .claude-core {
-            background: var(--bg-card);
-            border: 1px solid var(--line);
-            border-radius: var(--radius);
-            padding: 30px 26px;
-            box-shadow: var(--shadow-soft);
-            display: flex;
-            gap: 24px;
-            align-items: center;
-            margin-bottom: 24px;
-        }
-
-        @media(max-width:680px) {
-            .claude-core {
-                flex-direction: column;
-                text-align: center;
-                padding: 26px 20px
-            }
-        }
-
-        .claude-core .logo {
-            width: 96px;
-            height: 96px;
-            flex: 0 0 96px;
-            border-radius: 20px;
-            background: var(--claude-soft);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid #EED8CC;
-        }
-
-        .claude-core .logo img {
-            width: 60px;
-            height: 60px
-        }
-
-        .claude-core h3 {
-            font-size: 13px;
-            font-weight: 800;
-            color: var(--claude-deep);
-            text-transform: uppercase;
-            letter-spacing: .6px;
-            margin-bottom: 4px
-        }
-
-        .claude-core h4 {
-            font-size: 21px;
-            font-weight: 800;
-            margin-bottom: 8px
-        }
-
-        .claude-core p {
-            font-size: 15px;
-            color: var(--ink-soft);
-            max-width: 680px
-        }
-
-        .tools-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 14px
-        }
-
-        @media(max-width:820px) {
-            .tools-grid {
-                grid-template-columns: repeat(3, 1fr)
-            }
-        }
-
-        @media(max-width:520px) {
-            .tools-grid {
-                grid-template-columns: repeat(2, 1fr)
-            }
-        }
-
-        .tool {
-            background: var(--bg-card);
-            border: 1px solid var(--line);
-            border-radius: var(--radius-sm);
-            padding: 18px 12px;
-            text-align: center;
-            box-shadow: var(--shadow-soft);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-            transition: transform .15s;
-        }
-
-        .tool:hover {
-            transform: translateY(-3px)
-        }
-
-        .tool .ti {
-            width: 46px;
-            height: 46px;
-            display: flex;
-            align-items: center;
-            justify-content: center
-        }
-
-        .tool .ti img {
-            width: 42px;
-            height: 42px;
-            object-fit: contain
-        }
-
-        .tool .tn {
-            font-size: 13.5px;
-            font-weight: 700;
-            color: var(--ink)
-        }
-
-        .tool .badge {
-            font-size: 10px;
-            font-weight: 700;
-            color: var(--claude-deep);
-            background: var(--claude-soft);
-            padding: 2px 8px;
-            border-radius: 999px
-        }
-
-        /* ===== WHAT YOU GET (feature cards) ===== */
-
-        .feat-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 18px
-        }
-
-        @media(max-width:740px) {
-            .feat-grid {
-                grid-template-columns: 1fr
-            }
-        }
-
-        .feat {
-            background: var(--bg-card);
-            border: 1px solid var(--line);
-            border-radius: var(--radius);
-            padding: 24px;
-            box-shadow: var(--shadow-soft);
-            position: relative;
-        }
-
-        .feat .ic {
-            width: 52px;
-            height: 52px;
-            border-radius: 12px;
-            background: var(--claude-soft);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 14px;
-            border: 1px solid #EED8CC;
-        }
-
-        .feat .ic img {
-            width: 30px;
-            height: 30px
-        }
-
-        .feat h3 {
-            font-size: 17.5px;
-            font-weight: 800;
-            margin-bottom: 8px;
-            line-height: 1.25
-        }
-
-        .feat p {
-            font-size: 14.5px;
-            color: var(--ink-soft);
-            line-height: 1.6
-        }
-
-        .feat .tag {
-            display: inline-block;
-            font-size: 11px;
-            font-weight: 700;
-            color: var(--claude-deep);
-            background: var(--claude-soft);
-            padding: 3px 10px;
-            border-radius: 999px;
-            margin-bottom: 12px
-        }
+        /* ===== FEATURE CARDS ===== */
+        .feat-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px }
+        @media(max-width:740px) { .feat-grid { grid-template-columns: 1fr } }
+        .feat { background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow-soft); position: relative; }
+        .feat .ic { width: 52px; height: 52px; border-radius: 12px; background: var(--claude-soft); display: flex; align-items: center; justify-content: center; margin-bottom: 14px; border: 1px solid #EED8CC; font-size: 22px; font-weight: 800; color: var(--claude-deep); }
+        .feat h3 { font-size: 17.5px; font-weight: 800; margin-bottom: 8px; line-height: 1.25 }
+        .feat p { font-size: 14.5px; color: var(--ink-soft); line-height: 1.6 }
+        .feat .tag { display: inline-block; font-size: 11px; font-weight: 700; color: var(--claude-deep); background: var(--claude-soft); padding: 3px 10px; border-radius: 999px; margin-bottom: 12px }
 
         /* ===== WHO IS IT FOR ===== */
-
-        .who-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 12px
-        }
-
-        @media(max-width:740px) {
-            .who-grid {
-                grid-template-columns: repeat(2, 1fr)
-            }
-        }
-
-        @media(max-width:460px) {
-            .who-grid {
-                grid-template-columns: 1fr
-            }
-        }
-
-        .who {
-            background: var(--bg-card);
-            border: 1px solid var(--line);
-            border-radius: var(--radius-sm);
-            padding: 14px 16px;
-            font-size: 14.5px;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            box-shadow: var(--shadow-soft);
-        }
-
-        .who::before {
-            content: "✓";
-            color: var(--claude);
-            font-weight: 800;
-            flex: 0 0 auto
-        }
+        .who-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px }
+        @media(max-width:740px) { .who-grid { grid-template-columns: repeat(2, 1fr) } }
+        @media(max-width:460px) { .who-grid { grid-template-columns: 1fr } }
+        .who { background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 14px 16px; font-size: 14.5px; font-weight: 600; display: flex; align-items: center; gap: 10px; box-shadow: var(--shadow-soft); }
+        .who::before { content: "✓"; color: var(--claude); font-weight: 800; flex: 0 0 auto }
 
         /* ===== COMPARISON ===== */
-
-        .cmp-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 18px
-        }
-
-        @media(max-width:680px) {
-            .cmp-grid {
-                grid-template-columns: 1fr
-            }
-        }
-
-        .cmp {
-            border-radius: var(--radius);
-            padding: 26px 24px;
-            border: 1px solid var(--line)
-        }
-
-        .cmp.bad {
-            background: #FBF7F4
-        }
-
-        .cmp.good {
-            background: linear-gradient(160deg, var(--claude-tint), #fff);
-            border-color: #EED8CC
-        }
-
-        .cmp h3 {
-            font-size: 19px;
-            font-weight: 800;
-            margin-bottom: 16px;
-            display: flex;
-            align-items: center;
-            gap: 8px
-        }
-
-        .cmp ul {
-            list-style: none
-        }
-
-        .cmp li {
-            font-size: 14.5px;
-            padding: 8px 0 8px 28px;
-            position: relative;
-            color: var(--ink-soft);
-            border-bottom: 1px solid var(--line)
-        }
-
-        .cmp li:last-child {
-            border-bottom: none
-        }
-
-        .cmp.bad li::before {
-            content: "✕";
-            position: absolute;
-            left: 0;
-            color: #B9544A;
-            font-weight: 800
-        }
-
-        .cmp.good li::before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: var(--green);
-            font-weight: 800
-        }
+        .cmp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px }
+        @media(max-width:680px) { .cmp-grid { grid-template-columns: 1fr } }
+        .cmp { border-radius: var(--radius); padding: 26px 24px; border: 1px solid var(--line) }
+        .cmp.bad { background: #FBF7F4 }
+        .cmp.good { background: linear-gradient(160deg, var(--claude-tint), #fff); border-color: #EED8CC }
+        .cmp h3 { font-size: 19px; font-weight: 800; margin-bottom: 16px; display: flex; align-items: center; gap: 8px }
+        .cmp ul { list-style: none }
+        .cmp li { font-size: 14.5px; padding: 8px 0 8px 28px; position: relative; color: var(--ink-soft); border-bottom: 1px solid var(--line) }
+        .cmp li:last-child { border-bottom: none }
+        .cmp.bad li::before { content: "✕"; position: absolute; left: 0; color: #B9544A; font-weight: 800 }
+        .cmp.good li::before { content: "✓"; position: absolute; left: 0; color: var(--green); font-weight: 800 }
 
         /* ===== BONUSES ===== */
+        .bonus-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px }
+        @media(max-width:820px) { .bonus-grid { grid-template-columns: repeat(2, 1fr) } }
+        @media(max-width:520px) { .bonus-grid { grid-template-columns: 1fr } }
+        .bonus { background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow-soft); position: relative; }
+        .bonus .bnum { font-size: 12px; font-weight: 800; color: var(--claude-deep); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 10px }
+        .bonus .bic { font-size: 30px; margin-bottom: 12px }
+        .bonus h3 { font-size: 16px; font-weight: 800; margin-bottom: 12px; line-height: 1.3 }
+        .bonus .price { font-size: 15px; font-weight: 800 }
+        .bonus .price s { color: var(--ink-mute); font-weight: 600; margin-right: 8px }
+        .bonus .price .free { color: var(--green) }
 
-        .bonus-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 16px
-        }
+        /* ===== AUTHOR ===== */
+        .mentor { background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius); padding: 32px; box-shadow: var(--shadow-soft); display: flex; gap: 30px; align-items: flex-start; }
+        @media(max-width:740px) { .mentor { flex-direction: column; align-items: center; text-align: center; padding: 26px 20px; gap: 16px } }
+        .mentor .photo { flex: 0 0 160px; width: 160px; height: 160px; border-radius: 50%; overflow: hidden; border: 3px solid var(--claude-soft); box-shadow: var(--shadow-soft); background: var(--claude-soft); }
+        .mentor .photo img { width: 100%; height: 100%; object-fit: cover }
 
-        @media(max-width:820px) {
-            .bonus-grid {
-                grid-template-columns: repeat(2, 1fr)
-            }
-        }
-
-        @media(max-width:520px) {
-            .bonus-grid {
-                grid-template-columns: 1fr
-            }
-        }
-
-        .bonus {
-            background: var(--bg-card);
-            border: 1px solid var(--line);
-            border-radius: var(--radius);
-            padding: 22px;
-            box-shadow: var(--shadow-soft);
-            position: relative;
-        }
-
-        .bonus .bnum {
-            font-size: 12px;
-            font-weight: 800;
-            color: var(--claude-deep);
-            text-transform: uppercase;
-            letter-spacing: .5px;
-            margin-bottom: 10px
-        }
-
-        .bonus .bic {
-            width: 46px;
-            height: 46px;
-            margin-bottom: 12px
-        }
-
-        .bonus .bic img {
-            width: 46px;
-            height: 46px
-        }
-
-        .bonus h3 {
-            font-size: 16px;
-            font-weight: 800;
-            margin-bottom: 12px;
-            line-height: 1.3
-        }
-
-        .bonus .price {
-            font-size: 15px;
-            font-weight: 800
-        }
-
-        .bonus .price s {
-            color: var(--ink-mute);
-            font-weight: 600;
-            margin-right: 8px
-        }
-
-        .bonus .price .free {
-            color: var(--green)
-        }
-
-        /* ===== MENTOR ===== */
-
-        .mentor {
-            background: var(--bg-card);
-            border: 1px solid var(--line);
-            border-radius: var(--radius);
-            padding: 32px;
-            box-shadow: var(--shadow-soft);
-            display: flex;
-            gap: 30px;
-            align-items: flex-start;
-        }
-
-        @media(max-width:740px) {
-            .mentor {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-                padding: 26px 20px;
-                gap: 16px
-            }
-        }
-
-        .mentor .photo {
-            flex: 0 0 220px;
-            width: 220px;
-            border-radius: var(--radius);
-            overflow: hidden;
-            border: 1px solid var(--line)
-        }
-
-        .mentor .stats {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin: 14px 0 18px
-        }
-
-        .mentor .stat {
-            background: var(--claude-soft);
-            color: var(--claude-deep);
-            font-size: 13px;
-            font-weight: 700;
-            padding: 6px 12px;
-            border-radius: 999px;
-            border: 1px solid #EED8CC
-        }
-
-        .mentor h2 {
-            font-size: 26px;
-            font-weight: 800;
-            margin-bottom: 4px
-        }
-
-        .mentor .role {
-            font-size: 15px;
-            color: var(--ink-mute);
-            font-weight: 600;
-            margin-bottom: 6px
-        }
-
-        .mentor p {
-            font-size: 14.5px;
-            color: var(--ink-soft);
-            margin-bottom: 12px;
-            line-height: 1.65
-        }
-
-        /* ===== CERTIFICATE ===== */
-
-        .certificate {
-            padding-top: 20px;
-            padding-bottom: 40px;
-            border-bottom: 1px solid var(--line)
-        }
-
-        .cert-heading {
-            font-size: clamp(26px, 2.6vw, 48px);
-            font-weight: 800;
-            margin-bottom: 15px;
-            text-align: center;
-            line-height: 1.15
-        }
-
-        .cert-heading .hl {
-            color: var(--claude)
-        }
-
-        .certificate-grid {
-            max-width: 900px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1.2fr 0.8fr;
-            gap: 40px;
-            align-items: center
-        }
-
-        .cert-point {
-            display: flex;
-            align-items: flex-start;
-            gap: 16px;
-            margin-bottom: 20px
-        }
-
-        .cert-point:last-child {
-            margin-bottom: 0
-        }
-
-        .cert-point .icon {
-            width: 44px;
-            height: 44px;
-            border-radius: 10px;
-            border: 1.5px solid var(--line);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-            background: var(--bg-card);
-            box-shadow: 0 2px 6px rgba(0, 0, 0, .02)
-        }
-
-        .cert-point .icon img {
-            width: 20px;
-            height: 20px;
-            filter: brightness(0) saturate(100%) invert(48%) sepia(52%) saturate(1007%) hue-rotate(327deg) brightness(92%) contrast(88%)
-        }
-
-        .cert-point p {
-            margin: 0;
-            line-height: 1.5;
-            color: var(--ink-soft);
-            font-size: 15px
-        }
-
-        .cert-right {
-            position: relative;
-            display: flex;
-            justify-content: center
-        }
-
-        .cert-right img {
-            width: 100%;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
-            border: 1px solid var(--line)
-        }
-
-        @media(max-width:740px) {
-            .certificate-grid {
-                grid-template-columns: 1fr;
-                gap: 16px
-            }
-            .cert-point {
-                text-align: left
-            }
-            .certificate {
-                padding-top: 24px;
-                padding-bottom: 24px
-            }
-        }
+        /* ===== AWARD BLOCK ===== */
+        .award-block { display: flex; gap: 24px; align-items: center; background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow-soft); padding: 22px; margin-top: 18px; }
+        @media(max-width:680px) { .award-block { flex-direction: column; text-align: center } }
+        .award-block img { width: 130px; border-radius: 10px; border: 1px solid var(--line); flex: 0 0 130px }
+        .award-block h4 { font-size: 17px; font-weight: 800; margin-bottom: 6px }
+        .award-block p { font-size: 14px; color: var(--ink-soft); line-height: 1.6 }
+        .award-block .abadge { display: inline-block; font-size: 11px; font-weight: 800; color: var(--claude-deep); background: var(--claude-soft); padding: 3px 10px; border-radius: 999px; margin-bottom: 8px }
+        .mentor .stats { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0 18px }
+        .mentor .stat { background: var(--claude-soft); color: var(--claude-deep); font-size: 13px; font-weight: 700; padding: 6px 12px; border-radius: 999px; border: 1px solid #EED8CC }
+        .mentor h2 { font-size: 26px; font-weight: 800; margin-bottom: 4px }
+        .mentor .role { font-size: 15px; color: var(--ink-mute); font-weight: 600; margin-bottom: 6px }
+        .mentor p { font-size: 14.5px; color: var(--ink-soft); margin-bottom: 12px; line-height: 1.65 }
 
         /* ===== FAQ ===== */
-
-        .faq-item {
-            background: var(--bg-card);
-            border: 1px solid var(--line);
-            border-radius: var(--radius-sm);
-            margin-bottom: 12px;
-            overflow: hidden
-        }
-
-        .faq-q {
-            padding: 18px 22px;
-            font-weight: 700;
-            font-size: 15.5px;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 14px
-        }
-
-        .faq-q::after {
-            content: "+";
-            font-size: 22px;
-            color: var(--claude);
-            font-weight: 600;
-            flex: 0 0 auto;
-            transition: transform .2s
-        }
-
-        .faq-item.open .faq-q::after {
-            transform: rotate(45deg)
-        }
-
-        .faq-a {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height .3s ease;
-            padding: 0 22px
-        }
-
-        .faq-item.open .faq-a {
-            max-height: 400px;
-            padding: 0 22px 20px
-        }
-
-        .faq-a p {
-            font-size: 14.5px;
-            color: var(--ink-soft);
-            line-height: 1.65
-        }
+        .faq-item { background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius-sm); margin-bottom: 12px; overflow: hidden }
+        .faq-q { padding: 18px 22px; font-weight: 700; font-size: 15.5px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 14px }
+        .faq-q::after { content: "+"; font-size: 22px; color: var(--claude); font-weight: 600; flex: 0 0 auto; transition: transform .2s }
+        .faq-item.open .faq-q::after { transform: rotate(45deg) }
+        .faq-a { max-height: 0; overflow: hidden; transition: max-height .3s ease; padding: 0 22px }
+        .faq-item.open .faq-a { max-height: 400px; padding: 0 22px 20px }
+        .faq-a p { font-size: 14.5px; color: var(--ink-soft); line-height: 1.65 }
 
         /* ===== STICKY BAR ===== */
+        .sticky { position: fixed; bottom: 0; left: 0; right: 0; z-index: 90; background: rgba(255,255,255,.96); backdrop-filter: blur(8px); border-top: 1px solid var(--line); box-shadow: 0 -6px 24px rgba(40,30,20,.1); padding: 12px 16px; display: none; align-items: center; justify-content: center; gap: 18px; flex-wrap: wrap; }
+        @media(max-width:768px) { .sticky { display: flex } }
+        .sticky .price { font-size: 18px; font-weight: 800 }
+        .sticky .price s { color: var(--ink-mute); font-weight: 600; margin-right: 8px; font-size: 15px }
+        .sticky .btn { padding: 12px 32px; font-size: 15px }
+        @media(max-width:640px) { .sticky { gap: 10px; padding: 10px 12px } .sticky .btn { padding: 11px 26px; font-size: 14px } .sticky .price { font-size: 16px } }
+        .foot-space { height: 90px }
 
-        .sticky {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            z-index: 90;
-            background: rgba(255, 255, 255, .96);
-            backdrop-filter: blur(8px);
-            border-top: 1px solid var(--line);
-            box-shadow: 0 -6px 24px rgba(40, 30, 20, .1);
-            padding: 12px 16px;
-            display: none;
-            align-items: center;
-            justify-content: center;
-            gap: 18px;
-            flex-wrap: wrap;
-        }
+        .final { background: linear-gradient(160deg, var(--claude-tint), #fff); border-radius: var(--radius); padding: 44px 26px; text-align: center; border: 1px solid #EED8CC }
+        .final h2 { font-size: clamp(24px, 3.6vw, 34px); font-weight: 800; margin-bottom: 10px }
+        .final p { font-size: 15.5px; color: var(--ink-soft); margin-bottom: 22px }
 
-        @media(max-width:768px) {
-            .sticky {
-                display: flex
-            }
-        }
+        footer { text-align: center; padding: 30px 20px; color: var(--ink-mute); font-size: 13px }
 
-        .sticky .price {
-            font-size: 18px;
-            font-weight: 800
-        }
-
-        .sticky .price s {
-            color: var(--ink-mute);
-            font-weight: 600;
-            margin-right: 8px;
-            font-size: 15px
-        }
-
-        .sticky .price .free {
-            color: var(--green)
-        }
-
-        .sticky .timer {
-            font-size: 13px;
-            color: var(--ink-mute);
-            font-weight: 600
-        }
-
-        .sticky .btn {
-            padding: 12px 32px;
-            font-size: 15px
-        }
-
-        @media(max-width:640px) {
-            .sticky {
-                gap: 10px;
-                padding: 10px 12px
-            }
-            .sticky .timer {
-                display: none
-            }
-            .sticky .btn {
-                padding: 11px 26px;
-                font-size: 14px
-            }
-            .sticky .price {
-                font-size: 16px
-            }
-        }
-
-        .foot-space {
-            height: 90px
-        }
-
-        /* ===== MODAL ===== */
-
-        .modal-overlay {
-            position: fixed;
-            inset: 0;
-            background: rgba(26, 26, 24, .6);
-            z-index: 200;
-            display: none;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        .modal-overlay.show {
-            display: flex
-        }
-
-        .modal {
-            background: #fff;
-            border-radius: var(--radius);
-            max-width: 420px;
-            width: 100%;
-            padding: 30px 26px;
-            position: relative;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, .3);
-        }
-
-        .modal h3 {
-            font-size: 21px;
-            font-weight: 800;
-            margin-bottom: 6px;
-            text-align: center
-        }
-
-        .modal .msub {
-            font-size: 13.5px;
-            color: var(--ink-mute);
-            text-align: center;
-            margin-bottom: 20px
-        }
-
-        .modal input,
-        .modal select {
-            width: 100%;
-            border: 1px solid var(--line);
-            border-radius: 10px;
-            padding: 13px 14px;
-            font-size: 15px;
-            margin-bottom: 12px;
-            font-family: var(--font);
-            background: #fff;
-            color: #111;
-        }
-
-        .modal input:focus,
-        .modal select:focus {
-            outline: none;
-            border-color: var(--claude)
-        }
-
-        .modal .close {
-            position: absolute;
-            top: 14px;
-            right: 18px;
-            font-size: 24px;
-            color: var(--ink-mute);
-            cursor: pointer;
-            line-height: 1
-        }
-
-        .modal .trust {
-            font-size: 12px;
-            color: var(--ink-mute);
-            text-align: center;
-            margin-top: 6px
-        }
-
-        .modal .trust span {
-            display: block;
-            margin-top: 6px
-        }
-
-        /* ===== FINAL ===== */
-
-        .final {
-            background: linear-gradient(160deg, var(--claude-tint), #fff);
-            border-radius: var(--radius);
-            padding: 44px 26px;
-            text-align: center;
-            border: 1px solid #EED8CC
-        }
-
-        .final h2 {
-            font-size: clamp(24px, 3.6vw, 34px);
-            font-weight: 800;
-            margin-bottom: 10px
-        }
-
-        .final p {
-            font-size: 15.5px;
-            color: var(--ink-soft);
-            margin-bottom: 22px
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px 20px;
-            color: var(--ink-mute);
-            font-size: 13px
-        }
-
-        /* ===== MOBILE STICKY FOOTER ===== */
-
-        :root {
-            --safe-bottom: env(safe-area-inset-bottom, 0px)
-        }
-
-        .mobile-sticky {
-            position: fixed;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: 9999;
-            display: none;
-            background: var(--bg);
-            padding: 10px 16px calc(10px + var(--safe-bottom));
-            box-shadow: 0 -8px 25px rgba(0, 0, 0, .08);
-            border-top: 1px solid var(--line)
-        }
-
-        .mobile-sticky .ms-wrap {
-            display: grid;
-            grid-template-columns: 1fr auto;
-            align-items: center;
-            gap: 12px;
-            background: var(--bg-card);
-            border: 1px solid var(--line);
-            border-radius: 12px;
-            padding: 8px 12px
-        }
-
-        .mobile-sticky .ms-left {
-            display: grid;
-            gap: 2px
-        }
-
-        .mobile-sticky .ms-label {
-            color: var(--ink-soft);
-            font-weight: 600;
-            font-size: 12px;
-            text-transform: uppercase
-        }
-
-        .mobile-sticky .ms-timer {
-            display: flex;
-            align-items: baseline;
-            gap: 6px
-        }
-
-        .mobile-sticky .ms-timer span {
-            font-weight: 800;
-            font-size: 16px;
-            color: var(--claude);
-            min-width: 22px;
-            text-align: center
-        }
-
-        .mobile-sticky .ms-timer small {
-            color: var(--ink-soft);
-            font-size: 11px
-        }
-
-        .mobile-sticky .ms-cta {
-            background: var(--claude);
-            color: #fff;
-            font-weight: 700;
-            font-size: 15px;
-            padding: 10px 16px;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(217, 119, 87, .2);
-            user-select: none;
-            transition: background-color .2s;
-            white-space: nowrap;
-            cursor: pointer
-        }
-
-        .mobile-sticky .ms-cta:hover {
-            background: var(--claude-deep)
-        }
-
-        .mobile-sticky .ms-note {
-            text-align: center;
-            color: var(--ink-soft);
-            font-size: 11px;
-            margin-top: 6px;
-            font-weight: 500
-        }
-
-        @media(max-width:768px) {
-            .mobile-sticky {
-                display: block
-            }
-            body.has-mobile-sticky {
-                padding-bottom: calc(90px + var(--safe-bottom))
-            }
-        }
+        :root { --safe-bottom: env(safe-area-inset-bottom, 0px) }
+        .mobile-sticky { position: fixed; left: 0; right: 0; bottom: 0; z-index: 9999; display: none; background: var(--bg); padding: 10px 16px calc(10px + var(--safe-bottom)); box-shadow: 0 -8px 25px rgba(0,0,0,.08); border-top: 1px solid var(--line) }
+        .mobile-sticky .ms-wrap { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 12px; background: var(--bg-card); border: 1px solid var(--line); border-radius: 12px; padding: 8px 12px }
+        .mobile-sticky .ms-left { display: grid; gap: 2px }
+        .mobile-sticky .ms-label { color: var(--ink-soft); font-weight: 600; font-size: 12px; text-transform: uppercase }
+        .mobile-sticky .ms-price { font-weight: 900; font-size: 18px; color: var(--claude-deep) }
+        .mobile-sticky .ms-price s { color: var(--ink-mute); font-weight: 600; font-size: 13px; margin-right: 6px }
+        .mobile-sticky .ms-cta { background: var(--claude); color: #fff; font-weight: 700; font-size: 15px; padding: 10px 16px; border-radius: 8px; box-shadow: 0 4px 12px rgba(217,119,87,.2); user-select: none; transition: background-color .2s; white-space: nowrap; cursor: pointer }
+        .mobile-sticky .ms-cta:hover { background: var(--claude-deep) }
+        .mobile-sticky .ms-note { text-align: center; color: var(--ink-soft); font-size: 11px; margin-top: 6px; font-weight: 500 }
+        @media(max-width:768px) { .mobile-sticky { display: block } body.has-mobile-sticky { padding-bottom: calc(90px + var(--safe-bottom)) } }
     </style>
 </head>
 
@@ -1414,208 +295,172 @@
 
     <!-- TOP STRIP -->
     <div class="topbar">
-        <span>Free 3-Hour Live Workshop · Limited Seats · Bonuses Worth ₹19,000</span>
-        <span><span class="stars">★★★★★</span> 20K+ reviews (4.9 of 5)</span>
+        <span>📘 Instant PDF Download · Written From Real ₹24,560 Ad Spend</span>
+        <span><span class="stars">★★★★★</span> Real Campaigns, Real Numbers</span>
     </div>
 
     <!-- HERO -->
     <section class="hero wrap">
 
-        <h1>USE <span class="hl-blue">CLAUDE AI</span> TO RUN <span class="hl-blue">PROFITABLE META ADS</span> FOR FREE & GET QUALITY <span class="hl-blue">LEADS AT ₹40</span> & GROW YOUR <span class="hl-blue">PROFITS BY 3X</span></h1>
-        <p class="sub">Run winning Facebook &amp; Instagram Ads using Claude AI as your marketing brain — it writes your copy, builds your targeting, creates your creatives &amp; landing pages.</p>
-        <p class="note">(No prior AI, ads or marketing experience needed)</p>
+        <h1>LEARN TO RUN <span class="hl-blue">PROFITABLE META ADS</span>, TRACK YOUR RESULTS THE RIGHT WAY & BUILD A <span class="hl-blue">SHOPIFY STORE</span> THAT SELLS EVERY DAY</h1>
+        <p class="sub">The complete Facebook &amp; Instagram Ads eBook for Indian entrepreneurs — Business Manager setup, audience targeting, ad creatives, budgeting, scaling to ₹50,000/day, and selling on Shopify. Written from real campaigns, real rupees, real results.</p>
+        <p class="note">(No prior experience with ads or Shopify needed — written for complete beginners)</p>
+        <p class="note">📰 MechServi (built by the author) has been featured in <a href="https://theindianalert.com/mechservi-building-indias-first-organized-auto-care-marketplace/" target="_blank" rel="noopener" style="color:var(--claude-deep);font-weight:700">The Indian Alert</a></p>
 
         <div class="hero-grid">
-            <!-- LEFT: Image -->
-            <div class="hero-img">
-                <img src="images/fb-claude.jpg" alt="Run Meta Ads with Claude AI in 3 Hours">
+            <!-- LEFT: Book cover mockup (swap for your real cover image later) -->
+            <div class="book-cover">
+                <div class="bc-tag">2026 Edition</div>
+                <div class="bc-title">Meta Ads Mastery</div>
+                <div class="bc-sub">The Complete Facebook &amp; Instagram Ads Guide for Indian Entrepreneurs</div>
+                <div class="bc-author">Rishabh Shukla · Founder, MechServi</div>
             </div>
 
-            <!-- RIGHT: Date, Info, CTA -->
+            <!-- RIGHT: Price, info, CTA -->
             <div class="hero-right">
-                <div class="dm-date-card">
-                    <div class="dm-cal-badge">
-                        <div class="dm-cal-month"><span id="fb-cal-month">JUN</span></div>
-                        <div class="dm-cal-day"><span id="fb-cal-date">14</span></div>
-                    </div>
-                    <div class="dm-date-info">
-                        <div class="dm-date-line" id="fb-workshop-date">Saturday, Jun 14, 2025</div>
-                        <div class="dm-time-line" id="fb-workshop-time">07:00 PM IST</div>
-                    </div>
+                <div class="price-card">
+                    <span class="now">₹199</span>
+                    <span class="was">₹999</span>
+                    <span class="off">80% OFF</span>
                 </div>
 
                 <div class="dm-info-row">
                     <div class="dm-info-card">
-                        <div class="dm-label">Mode</div>
-                        <div class="dm-value">Online on Zoom</div>
+                        <div class="dm-label">Format</div>
+                        <div class="dm-value">Instant PDF</div>
                     </div>
                     <div class="dm-info-card">
-                        <div class="dm-label">Language</div>
-                        <div class="dm-value">English</div>
+                        <div class="dm-label">Pages</div>
+                        <div class="dm-value">Step-by-Step Guide</div>
                     </div>
                 </div>
 
-                <button class="cta-big js-open" aria-label="Register Free">
-        Run Profitable Meta Ads with Claude AI — for FREE!
-        <small>(Offer Valid Only For First 100 People!)</small>
-      </button>
-                <p class="note">Register before <strong data-date="tomorrow"></strong> to unlock bonuses worth <strong>₹19,000</strong></p>
+                <a href="PASTE_YOUR_PAYMENT_LINK_HERE" class="cta-big" aria-label="Buy Now">
+                    Get Instant Access — ₹199 Only
+                    <small>(One-Time Payment · Lifetime Access)</small>
+                </a>
+                <p class="note">Delivered instantly to your email after payment · Bonuses worth <strong>₹2,000+</strong> included</p>
             </div>
         </div>
     </section>
 
-
-
-    <!-- TESTIMONIALS -->
+    <!-- REAL RESULTS -->
     <section class="section wrap">
         <div class="shead">
-            <h2>See how students used <span class="hl">Claude AI + Meta Ads</span> to grow their leads &amp; sales</h2>
-            <p>Real results from people just like you. No agency. No big budget.</p>
+            <h2>These Aren't Made-Up Numbers — <span class="hl">Real Campaign Results</span></h2>
+            <p>From a live 30-day Meta Ads campaign run using the exact system taught inside this eBook.</p>
         </div>
-        <div class="tgrid">
-            <img src="images/satpal.png" alt="Satpal Singh result">
-            <img src="images/ranbir.png" alt="Ranbir Singh result">
-            <img src="images/prachi.png" alt="Prachi Jain result">
-            <img src="images/chitvan.png" alt="Chitvan Vadhera result">
-            <img src="images/vaman.png" alt="Vaman Acharya result">
-            <img src="images/parul.png" alt="Parul Khare result">
+        <div class="stat-grid">
+            <div class="stat-card"><div class="num">2,350+</div><div class="lbl">Leads Generated</div></div>
+            <div class="stat-card"><div class="num">15.69x</div><div class="lbl">ROAS Achieved</div></div>
+            <div class="stat-card"><div class="num">7.32%</div><div class="lbl">Conversion Rate</div></div>
+            <div class="stat-card"><div class="num">₹3.85L</div><div class="lbl">Revenue Tracked</div></div>
         </div>
 
         <div class="ratingline">
             <div class="stars">★★★★★</div>
-            <div class="score">4.9 out of 5</div>
-            <div class="count">(15,000+ Verified Reviews)</div>
+            <div class="score">Built on 3+ years of real Meta Ads spend</div>
+            <div class="count">₹24,560 spent · 356 confirmed bookings · Full case study inside</div>
         </div>
-        <button class="cta-big js-open" aria-label="Register Free">
-        Run Profitable Meta Ads with Claude AI — for FREE!
-        <small>(Offer Valid Only For First 100 People!)</small>
-      </button>
-        <p class="note">Register before <strong data-date="tomorrow"></strong> to unlock bonuses worth <strong>₹19,000</strong></p>
+        <br>
+        <a href="PASTE_YOUR_PAYMENT_LINK_HERE" class="cta-big" aria-label="Buy Now">
+            Get Instant Access — ₹199 Only
+            <small>(One-Time Payment · Lifetime Access)</small>
+        </a>
     </section>
 
-    <!-- POWERED BY CLAUDE -->
+    <!-- WHAT'S COVERED -->
     <section class="section wrap">
         <div class="shead">
-            <h2>Powered by <span class="hl">Claude AI</span> — Your Meta Ads Command Center</h2>
-            <p>Claude AI is the core brain that runs your entire Meta Ads workflow. You just talk to it in plain English.</p>
+            <h2>What's Inside <span class="hl">Meta Ads Mastery</span></h2>
+            <p>Every tool and platform you'll actually use, explained in plain English.</p>
         </div>
 
         <div class="claude-core">
-            <div class="logo"><img src="svg/claude-color.svg" alt="Claude AI"></div>
+            <div class="logo">📘</div>
             <div>
-                <h3>Claude AI</h3>
-                <h4>Your Core Meta Ads Brain</h4>
-                <p>Learn to use Claude AI to write scroll-stopping ad copy, build laser-focused audience targeting, generate ad creatives &amp; video scripts, design high-converting landing pages, and analyse your campaign data — all in plain English, with
-                    zero technical or design skills.</p>
+                <h3>Written By A Founder, Not A Theory Teacher</h3>
+                <h4>Real Campaigns. Real Rupees. Real Results.</h4>
+                <p>This eBook is written by Rishabh Shukla, Founder of MechServi, based on campaigns he has personally run and managed — not recycled theory. You get the exact Business Manager setup, targeting, creative, budgeting and scaling process used to generate 2,350+ leads and 15.69x ROAS.</p>
             </div>
         </div>
 
         <div class="tools-grid">
-            <div class="tool">
-                <div class="ti"><img src="svg/claude-color.svg" alt="Claude AI"></div>
-                <div class="tn">Claude AI</div>
-            </div>
-            <div class="tool">
-                <div class="ti"><img src="svg/meta.svg" alt="Meta Ads Manager"></div>
-                <div class="tn">Meta Ads Manager</div>
-            </div>
-            <div class="tool">
-                <div class="ti"><img src="svg/instagram.svg" alt="Instagram Ads"></div>
-                <div class="tn">Instagram Ads</div>
-            </div>
-            <div class="tool">
-                <div class="ti"><img src="svg/chatgpt.svg" alt="ChatGPT"></div>
-                <div class="tn">ChatGPT</div>
-            </div>
-            <div class="tool">
-                <div class="ti"><img src="images/canva.webp" alt="Canva AI"></div>
-                <div class="tn">Canva AI</div>
-            </div>
-            <div class="tool">
-                <div class="ti"><img src="svg/meta.svg" alt="Advantage+"></div>
-                <div class="tn">Advantage+ (ASC)</div>
-            </div>
-            <div class="tool">
-                <div class="ti"><img src="svg/ai.svg" alt="WhatsApp Ads"></div>
-                <div class="tn">WhatsApp Ads</div>
-            </div>
-            <div class="tool">
-                <div class="ti"><img src="images/ai_tools.jpeg" alt="More AI tools"></div>
-                <div class="tn">+ More AI Tools</div>
-            </div>
+            <div class="tool"><div class="ti">📣</div><div class="tn">Meta Ads Manager</div></div>
+            <div class="tool"><div class="ti">📘</div><div class="tn">Facebook Ads</div></div>
+            <div class="tool"><div class="ti">📷</div><div class="tn">Instagram Ads</div></div>
+            <div class="tool"><div class="ti">🛍️</div><div class="tn">Shopify</div></div>
+            <div class="tool"><div class="ti">💬</div><div class="tn">WhatsApp Business</div></div>
+            <div class="tool"><div class="ti">🎨</div><div class="tn">Canva</div></div>
+            <div class="tool"><div class="ti">📊</div><div class="tn">Pixel &amp; Conversions API</div></div>
+            <div class="tool"><div class="ti">🤖</div><div class="tn">AI Ad-Copy Prompts</div></div>
         </div>
     </section>
 
-    <!-- CTA 2 -->
     <section class="section wrap" style="padding-top:15px">
         <div class="cta-block">
-            <div class="big">Let Claude AI Run Your Meta Ads <br>Join Free Workshop</div>
-
-            <button class="cta-big js-open" aria-label="Register Free">
-        Run Profitable Meta Ads with Claude AI — for FREE!
-        <small>(Offer Valid Only For First 100 People!)</small>
-      </button>
-
+            <div class="big">Stop Guessing. Start Running Profitable Ads.</div>
+            <a href="PASTE_YOUR_PAYMENT_LINK_HERE" class="cta-big" aria-label="Buy Now">
+                Get Instant Access — ₹199 Only
+                <small>(One-Time Payment · Lifetime Access)</small>
+            </a>
         </div>
     </section>
     <br>
-    <!-- WHAT YOU WILL GET -->
+
+    <!-- CHAPTERS -->
     <section class="section wrap">
         <div class="shead">
-            <h2>What You Will Learn in This <span class="hl">3-Hour Meta Ads Workshop</span></h2>
-            <p>Every step is done faster and smarter using Claude AI as your assistant.</p>
+            <h2>What You Will Learn Inside <span class="hl">Every Chapter</span></h2>
+            <p>A complete, step-by-step system — from your first ad account to scaling to ₹50,000/day.</p>
         </div>
         <div class="feat-grid">
             <div class="feat">
-                <div class="ic"><img src="svg/meta.svg" alt=""></div>
-                <span class="tag">Claude AI Guided</span>
-                <h3>Set Up Your Ad Account So Meta Never Bans or Restricts You</h3>
-                <p>Most business owners get restricted before their first sale. Learn the exact Business Manager &amp; ad account setup — done right the first time — with Claude AI walking you through every step so you can run ads without fear.</p>
+                <div class="ic">1</div>
+                <span class="tag">Foundation</span>
+                <h3>Set Up Your Business Manager &amp; Ad Account The Right Way</h3>
+                <p>Most business owners get restricted before their first sale. Learn the exact Business Manager, ad account, Pixel and Conversions API setup — done right the first time.</p>
             </div>
             <div class="feat">
-                <div class="ic"><img src="svg/framework.svg" alt=""></div>
-                <span class="tag">Claude AI Guided</span>
-                <h3>Choose the Right Objective &amp; Never Waste Your Ad Budget Again</h3>
-                <p>One wrong objective and Meta optimises for the wrong people. Ask Claude AI which objective gets leads, which gets sales, and how to structure your campaign so every rupee works harder.</p>
+                <div class="ic">2</div>
+                <span class="tag">Targeting</span>
+                <h3>Find Your Exact Customers</h3>
+                <p>Cold, warm and hot audiences, lookalikes, retargeting and audience research built specifically for Indian buyers.</p>
             </div>
             <div class="feat">
-                <div class="ic"><img src="svg/persona.svg" alt=""></div>
-                <span class="tag">Claude AI Guided</span>
-                <h3>Find Your Exact Customers With Targeting That Actually Converts</h3>
-                <p>With crores of users on Facebook &amp; Instagram, the skill is narrowing to your buyer. Use Claude AI to build interest targeting, custom audiences, lookalikes &amp; the latest Advantage+ strategies — tested on 100+ real businesses.</p>
+                <div class="ic">3</div>
+                <span class="tag">Creative</span>
+                <h3>Ad Creatives, Copy &amp; 50 Ready Headlines</h3>
+                <p>20 ready-to-use ad copy templates, 50 proven headlines and AI prompts to create scroll-stopping visuals — even with zero design skill.</p>
             </div>
             <div class="feat">
-                <div class="ic"><img src="svg/ai.svg" alt=""></div>
-                <span class="tag">Claude AI Powered</span>
-                <h3>Create Scroll-Stopping Ads &amp; Videos Using Claude AI</h3>
-                <p>Bad creatives burn budgets. Use Claude AI to generate proven ad copy frameworks, hooks, and video ad scripts that convert — even if you've never written an ad or made a video before.</p>
+                <div class="ic">4</div>
+                <span class="tag">Budgeting</span>
+                <h3>Spend ₹1,000–₹3,000/Day Profitably</h3>
+                <p>Understand your unit economics, choose the right bid strategy, and know exactly what the numbers in Ads Manager actually mean.</p>
             </div>
             <div class="feat">
-                <div class="ic"><img src="svg/target.svg" alt=""></div>
-                <span class="tag">Claude AI Powered</span>
-                <h3>Build a Landing Page That Turns Ad Clicks into Real Sales</h3>
-                <p>Sending traffic to your homepage is like pouring water into a leaking bucket. Use Claude AI to build fast, focused landing pages — no designer, no developer — that convert clicks into leads &amp; buyers.</p>
+                <div class="ic">5</div>
+                <span class="tag">Scaling</span>
+                <h3>Scale From ₹1,000 to ₹50,000 Per Day</h3>
+                <p>Vertical and horizontal scaling, creative refresh to prevent ad fatigue, and the exact rules used to scale winning campaigns responsibly.</p>
             </div>
             <div class="feat">
-                <div class="ic"><img src="svg/campaign.svg" alt=""></div>
-                <span class="tag">2026 Strategy</span>
-                <h3>Run Smarter Campaigns with Claude AI, ASC &amp; Meta's Latest Updates</h3>
-                <p>Meta's algorithm has changed completely. Learn how Andromeda (Meta's AI ranking system) decides which ads win, how to use Advantage+ Shopping Campaigns the right way, and how to use Claude AI to stay ahead while everyone else runs outdated
-                    strategies.</p>
+                <div class="ic">6</div>
+                <span class="tag">Shopify</span>
+                <h3>Turn Ad Clicks Into Real Shopify Sales</h3>
+                <p>Set up your Shopify store, install your Pixel correctly, build a sales page that converts, and run a complete ads-to-checkout funnel.</p>
             </div>
         </div>
     </section>
 
-    <!-- CTA 2 -->
     <section class="section wrap" style="padding-top:15px">
         <div class="cta-block">
-            <div class="big">Let Claude AI Run Your Meta Ads <br>Join Free Workshop</div>
-
-            <button class="cta-big js-open" aria-label="Register Free">
-        Run Profitable Meta Ads with Claude AI — for FREE!
-        <small>(Offer Valid Only For First 100 People!)</small>
-      </button>
-
+            <div class="big">Get The Complete System — Today</div>
+            <a href="PASTE_YOUR_PAYMENT_LINK_HERE" class="cta-big" aria-label="Buy Now">
+                Get Instant Access — ₹199 Only
+                <small>(One-Time Payment · Lifetime Access)</small>
+            </a>
         </div>
     </section>
     <br>
@@ -1623,35 +468,29 @@
     <!-- WHO IS IT FOR -->
     <section class="section wrap">
         <div class="shead">
-            <h2>This Masterclass is <span class="hl">Specially Designed</span> For Anyone Who Wants More Leads &amp; Sales</h2>
-            <p>No matter which industry you are in — it works perfectly for…</p>
+            <h2>This eBook is <span class="hl">Built For</span> Anyone Who Wants Real Leads &amp; Sales</h2>
+            <p>No matter your industry — it works for…</p>
         </div>
         <div class="who-grid">
+            <div class="who">Shopify Store Owners</div>
+            <div class="who">D2C / eCommerce Sellers</div>
             <div class="who">Small Business Owners</div>
-            <div class="who">E-commerce Store Owners</div>
             <div class="who">Coaches &amp; Trainers</div>
-            <div class="who">Agency Owners</div>
-            <div class="who">Consultants</div>
-            <div class="who">Doctors / Dentists</div>
-            <div class="who">Entrepreneurs</div>
-            <div class="who">Real Estate</div>
-            <div class="who">Digital Marketers</div>
-            <div class="who">Local Businesses</div>
             <div class="who">Freelancers</div>
-            <div class="who">Social Media Marketers</div>
+            <div class="who">Digital Product Sellers</div>
+            <div class="who">Consultants</div>
+            <div class="who">Local Businesses</div>
+            <div class="who">Complete Beginners</div>
         </div>
     </section>
 
-    <!-- CTA 2 -->
     <section class="section wrap" style="padding-top:15px">
         <div class="cta-block">
-            <div class="big">Let Claude AI Run Your Meta Ads <br>Join Free Workshop</div>
-
-            <button class="cta-big js-open" aria-label="Register Free">
-        Run Profitable Meta Ads with Claude AI — for FREE!
-        <small>(Offer Valid Only For First 100 People!)</small>
-      </button>
-
+            <div class="big">Get The Complete System — Today</div>
+            <a href="PASTE_YOUR_PAYMENT_LINK_HERE" class="cta-big" aria-label="Buy Now">
+                Get Instant Access — ₹199 Only
+                <small>(One-Time Payment · Lifetime Access)</small>
+            </a>
         </div>
     </section>
     <br>
@@ -1659,163 +498,135 @@
     <!-- COMPARISON -->
     <section class="section wrap">
         <div class="shead">
-            <h2>3 Hour Movie vs <span class="hl">3 Hour Workshop</span></h2>
-            <p>A simple comparison of how you choose to spend your next 3 hours.</p>
+            <h2>Boosting Posts vs <span class="hl">Running Real Campaigns</span></h2>
+            <p>A simple comparison of two very different outcomes.</p>
         </div>
         <div class="cmp-grid">
             <div class="cmp bad">
-                <h3>🎬 3 Hour Movie</h3>
+                <h3>😕 Boosting Random Posts</h3>
                 <ul>
-                    <li>Entertaining but no real impact</li>
-                    <li>Money spent, skills unchanged</li>
-                    <li>Time gone, nothing to show</li>
-                    <li>No boost to your business or income</li>
+                    <li>No targeting strategy, no tracking</li>
+                    <li>Money spent, no measurable results</li>
+                    <li>No idea what worked or why</li>
+                    <li>Business growth stays flat</li>
                 </ul>
             </div>
             <div class="cmp good">
-                <h3>⚡ 3 Hour Workshop</h3>
+                <h3>⚡ Running Real Campaigns</h3>
                 <ul>
-                    <li>Use Claude AI to launch profitable Meta Ads</li>
-                    <li>Get quality leads at ₹40 without an agency</li>
-                    <li>Create ads, creatives &amp; landing pages for free</li>
-                    <li>Grow your leads, sales &amp; profits by 3X</li>
+                    <li>Correct Business Manager &amp; Pixel setup</li>
+                    <li>Targeting built for Indian buyers</li>
+                    <li>Every rupee tracked, every result explained</li>
+                    <li>A repeatable system to scale sales</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- CTA 2 -->
     <section class="section wrap" style="padding-top:15px">
         <div class="cta-block">
-            <div class="big">Let Claude AI Run Your Meta Ads <br>Join Free Workshop</div>
-
-            <button class="cta-big js-open" aria-label="Register Free">
-        Run Profitable Meta Ads with Claude AI — for FREE!
-        <small>(Offer Valid Only For First 100 People!)</small>
-      </button>
-
+            <div class="big">Get The Complete System — Today</div>
+            <a href="PASTE_YOUR_PAYMENT_LINK_HERE" class="cta-big" aria-label="Buy Now">
+                Get Instant Access — ₹199 Only
+                <small>(One-Time Payment · Lifetime Access)</small>
+            </a>
         </div>
     </section>
     <br>
+
     <!-- BONUSES -->
     <section class="section wrap">
         <div class="shead">
-            <h2>Unlock Bonuses Worth <span class="hl">₹19,000</span> Free</h2>
-            <p>Attend the workshop to unlock all 5 bonuses.</p>
+            <h2>Buy Today &amp; Unlock Bonuses Worth <span class="hl">₹2,000+</span> Free</h2>
+            <p>Every bonus is included instantly with your purchase.</p>
         </div>
         <div class="bonus-grid">
             <div class="bonus">
                 <div class="bnum">Bonus 1</div>
-                <div class="bic"><img src="svg/aidm.svg" alt=""></div>
-                <h3>Meta Ads Campaign 47-Step Setup Checklist</h3>
-                <div class="price"><s>₹5,000</s><span class="free">FREE</span></div>
+                <div class="bic">✅</div>
+                <h3>Meta Ads Quick-Start Checklist</h3>
+                <div class="price"><s>₹499</s><span class="free">FREE</span></div>
             </div>
             <div class="bonus">
                 <div class="bnum">Bonus 2</div>
-                <div class="bic"><img src="svg/ebook.svg" alt=""></div>
-                <h3>200+ Claude AI &amp; ChatGPT Prompts for Meta Ads</h3>
-                <div class="price"><s>₹7,000</s><span class="free">FREE</span></div>
+                <div class="bic">💬</div>
+                <h3>Private WhatsApp Community Access</h3>
+                <div class="price"><span class="free">FREE</span></div>
             </div>
             <div class="bonus">
                 <div class="bnum">Bonus 3</div>
-                <div class="bic"><img src="svg/community.svg" alt=""></div>
-                <h3>90-Day Digital Marketing Action Plan</h3>
-                <div class="price"><s>₹4,000</s><span class="free">FREE</span></div>
+                <div class="bic">🛍️</div>
+                <h3>Shopify Sales Page Copy Template</h3>
+                <div class="price"><s>₹299</s><span class="free">FREE</span></div>
             </div>
             <div class="bonus">
                 <div class="bnum">Bonus 4</div>
-                <div class="bic"><img src="svg/project-management.svg" alt=""></div>
-                <h3>Private Meta Ads MasterMind Community</h3>
-                <div class="price"><s>₹2,000</s><span class="free">FREE</span></div>
+                <div class="bic">🎨</div>
+                <h3>Ready-Made Canva Ad Templates</h3>
+                <div class="price"><s>₹999</s><span class="free">FREE</span></div>
             </div>
             <div class="bonus">
                 <div class="bnum">Bonus 5</div>
-                <div class="bic"><img src="svg/notes.svg" alt=""></div>
-                <h3>Detailed Notes for Everything Taught in the Masterclass</h3>
-                <div class="price"><s>₹1,000</s><span class="free">FREE</span></div>
+                <div class="bic">🤖</div>
+                <h3>20 AI Prompts for Ad Copy &amp; Creatives</h3>
+                <div class="price"><s>₹499</s><span class="free">FREE</span></div>
             </div>
         </div>
     </section>
 
-    <!-- CTA 3 -->
     <section class="section wrap" style="padding-top:15px">
         <div class="cta-block">
-            <div class="big">Reserve Your Free Seat Before the Timer Hits Zero</div>
-            <div class="small">Fee increases to ₹2,000 once seats fill · Bonuses worth ₹19,000</div>
-            <button class="cta-big js-open" aria-label="Register Free">
-        Run Profitable Meta Ads with Claude AI — for FREE!
-        <small>(Offer Valid Only For First 100 People!)</small>
-      </button>
-
+            <div class="big">Reserve Your Copy At ₹199 Before The Price Goes Up</div>
+            <div class="small">Regular price ₹999 · Bonuses worth ₹2,000+ included today only</div>
+            <a href="PASTE_YOUR_PAYMENT_LINK_HERE" class="cta-big" aria-label="Buy Now">
+                Get Instant Access — ₹199 Only
+                <small>(One-Time Payment · Lifetime Access)</small>
+            </a>
         </div>
     </section>
     <br>
 
-    <!-- CERTIFICATE -->
-    <section class="certificate wrap">
-        <h2 class="cert-heading"><span class="hl">Certification</span> That Opens Doors</h2>
-        <div class="certificate-grid">
-            <div class="cert-left">
-                <div class="cert-point">
-                    <div class="icon"><img src="svg/diamond.svg" alt="Diamond Icon"></div>
-                    <p>Earn an industry-recognized Meta Ads certificate on workshop completion.</p>
-                </div>
-                <div class="cert-point">
-                    <div class="icon"><img src="svg/star.svg" alt="Star Icon"></div>
-                    <p>Showcase your new Claude-powered ad skills to clients, employers &amp; your network.</p>
-                </div>
-            </div>
-            <div class="cert-right">
-                <img src="images/fb-certificate.png" alt="Meta Ads Certificate">
-            </div>
-        </div>
-    </section>
-    <!-- CTA 2 -->
-    <section class="section wrap" style="padding-top:10px">
-        <div class="cta-block">
-            <div class="big">Let Claude AI Run Your Meta Ads <br>Join Free Workshop</div>
-
-            <button class="cta-big js-open" aria-label="Register Free">
-        Run Profitable Meta Ads with Claude AI — for FREE!
-        <small>(Offer Valid Only For First 100 People!)</small>
-      </button>
-
-        </div>
-    </section>
-    <br>
-    <!-- MENTOR -->
-    <!-- MENTOR -->
+    <!-- AUTHOR -->
     <section class="section wrap">
         <div class="shead" style="margin-bottom:16px">
-            <h2 style="font-size:clamp(30px,4vw,40px)">Meet Your <span class="hl">Mentor</span></h2>
+            <h2 style="font-size:clamp(30px,4vw,40px)">Meet The <span class="hl">Author</span></h2>
         </div>
         <div class="mentor">
-            <div class="photo"><img src="images/Navin_profile.webp" alt="Navin Parmar"></div>
+            <div class="photo"><img src="images/rishabh-shukla-photo.jpg" alt="Rishabh Shukla, Founder & CEO, MechServi"></div>
             <div>
-                <h2>Navin Parmar</h2>
-                <div class="role">Meta Ads Expert · Co-Founder &amp; CMO, Skill Nation</div>
+                <h2>Rishabh Shukla</h2>
+                <div class="role">Founder &amp; CEO, MechServi · Meta Ads Expert · eCommerce Growth Strategist</div>
                 <div class="stats">
-                    <span class="stat">₹62 Crore+ Ad Spend Managed</span>
-                    <span class="stat">1 Lakh+ Trained</span>
-                    <span class="stat">6+ Years Experience</span>
+                    <span class="stat">🏆 Entrepreneur of the Year 2025</span>
+                    <span class="stat">3+ Years Running Meta Ads</span>
+                    <span class="stat">Shopify Specialist</span>
                 </div>
-                <p>Hello, I am Navin Parmar, Chief Marketing Officer at Skill Nation and your Meta Ads trainer. I help business owners, coaches, consultants and marketers run highly profitable Facebook &amp; Instagram Ads campaigns.</p>
-                <p>As a Meta Ads Expert, I have worked with multiple brands across the United Kingdom, India, Ireland &amp; USA. After managing over ₹62 Crore in ad spend for my startup and clients, I now teach you how to run the same profitable campaigns
-                    yourself — using Claude AI to do the heavy lifting.</p>
+                <p>Hi, I'm Rishabh Shukla — Founder of MechServi, a doorstep automotive service startup I built from scratch, including its entire Meta Ads funnel (Ads → WhatsApp → Booking).</p>
+                <p>I've personally managed Meta &amp; Google Ads campaigns for SME clients across service, retail and eCommerce, and built Shopify stores from the ground up for offline businesses moving online. Everything in this eBook comes from campaigns I've actually run — not recycled theory.</p>
+                <div class="stats" style="margin-top:4px">
+                    <a class="stat" href="https://theindianalert.com/mechservi-building-indias-first-organized-auto-care-marketplace/" target="_blank" rel="noopener">📰 Featured: The Indian Alert</a>
+                    <a class="stat" href="https://www.linkedin.com/in/rishabh-shukla-896681a4/" target="_blank" rel="noopener">🔗 Connect on LinkedIn</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="award-block">
+            <img src="images/entrepreneur-award-certificate.jpg" alt="Entrepreneur of the Year 2025 Certificate - The Indian Alert">
+            <div>
+                <div class="abadge">50 Entrepreneurs of the Year Awards 2025</div>
+                <h4>Certified "Entrepreneur of the Year 2025"</h4>
+                <p>Awarded by The Indian Alert (an initiative by DigiSharks Communications) on 23rd August 2025, for excellence in innovative tech platform automation — recognising the work behind MechServi.</p>
             </div>
         </div>
     </section>
 
-    <!-- CTA 2 -->
     <section class="section wrap" style="padding-top:10px">
         <div class="cta-block">
-            <div class="big">Let Claude AI Run Your Meta Ads <br>Join Free Workshop</div>
-
-            <button class="cta-big js-open" aria-label="Register Free">
-        Run Profitable Meta Ads with Claude AI — for FREE!
-        <small>(Offer Valid Only For First 100 People!)</small>
-      </button>
-
+            <div class="big">Get The Complete System — Today</div>
+            <a href="PASTE_YOUR_PAYMENT_LINK_HERE" class="cta-big" aria-label="Buy Now">
+                Get Instant Access — ₹199 Only
+                <small>(One-Time Payment · Lifetime Access)</small>
+            </a>
         </div>
     </section>
     <br>
@@ -1827,59 +638,28 @@
         </div>
         <div id="faq">
             <div class="faq-item">
-                <div class="faq-q">When is the Masterclass?</div>
-                <div class="faq-a">
-                    <p>The workshop is on the date shown on this page, live for 3 hours at 07:00 PM IST.</p>
-                </div>
+                <div class="faq-q">How do I get the eBook after payment?</div>
+                <div class="faq-a"><p>It's delivered instantly to your email as a downloadable PDF right after your payment is confirmed.</p></div>
             </div>
             <div class="faq-item">
-                <div class="faq-q">Will Claude AI be covered?</div>
-                <div class="faq-a">
-                    <p>Yes — Claude AI is the core of this workshop. You'll learn to use it to write ad copy, build targeting, create ad creatives &amp; video scripts, design landing pages and read your campaign data. Every registered attendee also gets
-                        the 200+ Claude AI &amp; ChatGPT Prompts pack free.</p>
-                </div>
+                <div class="faq-q">I've never run Meta Ads. Is this for me?</div>
+                <div class="faq-a"><p>Yes. The eBook starts from the basics — Business Manager setup, Pixel installation — and walks you through everything step-by-step, even if you've never run a single ad.</p></div>
             </div>
             <div class="faq-item">
-                <div class="faq-q">Are there any pre-requisites?</div>
-                <div class="faq-a">
-                    <p>Just an interest in growing your business with Facebook &amp; Instagram Ads. No prior knowledge of any software or AI is required.</p>
-                </div>
+                <div class="faq-q">Do I need to pay for any tool or software to follow along?</div>
+                <div class="faq-a"><p>No. Every strategy is built around free or low-cost tools (Meta Business Suite, Canva, WhatsApp Business) that any beginner can access.</p></div>
             </div>
             <div class="faq-item">
-                <div class="faq-q">Is the Masterclass live or pre-recorded?</div>
-                <div class="faq-a">
-                    <p>It is a completely LIVE Masterclass with a total duration of 3 hours.</p>
-                </div>
+                <div class="faq-q">Does this cover selling on Shopify too?</div>
+                <div class="faq-a"><p>Yes — there's a dedicated section on setting up your Shopify store, installing your Pixel correctly, and building a sales funnel from ad click to checkout.</p></div>
             </div>
             <div class="faq-item">
-                <div class="faq-q">I've never run Meta Ads. Am I eligible?</div>
-                <div class="faq-a">
-                    <p>Absolutely! The Masterclass begins from the basics and walks you through everything step-by-step — Claude AI makes it easy even if you've never run a single ad.</p>
-                </div>
+                <div class="faq-q">Are the results in this eBook guaranteed?</div>
+                <div class="faq-a"><p>No. Results shown are from real campaigns the author has run personally, but ad performance depends on your product, budget, audience and execution — like any marketing skill, results vary.</p></div>
             </div>
             <div class="faq-item">
-                <div class="faq-q">Do I need to pay for any tool or software?</div>
-                <div class="faq-a">
-                    <p>No, you do not have to pay for any tool or software to attend and follow along.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-q">Do I get notes &amp; assignments to practice?</div>
-                <div class="faq-a">
-                    <p>Absolutely. It is a completely hands-on Masterclass where you will get notes, reference material &amp; assignments for your future reference.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-q">Is it a Certified Masterclass?</div>
-                <div class="faq-a">
-                    <p>Yes! It is a Skill Nation Certified Masterclass. Mr. Navin Parmar, Co-Founder at Skill Nation, will personally mentor &amp; certify you.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-q">Will it be recorded?</div>
-                <div class="faq-a">
-                    <p>No, it won't be recorded, but you will get detailed notes for your reference.</p>
-                </div>
+                <div class="faq-q">Is this a one-time payment?</div>
+                <div class="faq-a"><p>Yes — ₹199 is a one-time payment for lifetime access to the PDF and all bonuses.</p></div>
             </div>
         </div>
     </section>
@@ -1887,75 +667,25 @@
     <!-- FINAL CTA -->
     <section class="section wrap">
         <div class="final">
-            <h2>Ready to Run Profitable Meta Ads with Claude AI?</h2>
-            <p>Grow any business using Facebook &amp; Instagram Ads for FREE · Offer valid only for the first 100 people</p>
-            <button class="cta-big js-open" aria-label="Register Free">
-        Run Profitable Meta Ads with Claude AI — for FREE!
-        <small>(Offer Valid Only For First 100 People!)</small>
-      </button>
-            <div style="margin-top:18px;color:var(--gold);font-size:22px;letter-spacing:3px">★★★★★</div>
-            <div style="font-size:14px;color:var(--ink-mute)">20K+ reviews (4.9 of 5) · 27,500+ already attended</div>
+            <h2>Ready to Run Profitable Meta Ads &amp; Grow Your Shopify Sales?</h2>
+            <p>Get the complete step-by-step system for ₹199 — instant download, lifetime access</p>
+            <a href="PASTE_YOUR_PAYMENT_LINK_HERE" class="cta-big" aria-label="Buy Now">
+                Get Instant Access — ₹199 Only
+                <small>(One-Time Payment · Lifetime Access)</small>
+            </a>
         </div>
     </section>
 
     <footer>
-        © NP Academy · Navin Parmar. All rights reserved.<br> This site is not part of the Facebook website or Meta Platforms Inc. Additionally, this site is NOT endorsed by Meta in any way.
+        © Rishabh Shukla · MechServi. All rights reserved.<br> This site is not part of the Facebook website or Meta Platforms Inc. Additionally, this site is NOT endorsed by Meta in any way. Results shared are illustrative and not guaranteed.
     </footer>
 
     <div class="foot-space"></div>
 
-    <!-- STICKY BAR -->
+    <!-- STICKY BAR (desktop hidden via CSS, mobile uses mobile-sticky below) -->
     <div class="sticky">
-        <span class="price"><s>₹1999</s><span class="free">FREE</span></span>
-        <span class="timer">Price increases in <b id="t-min">09</b>m <b id="t-sec">59</b>s</span>
-        <button class="btn" onclick="openModal()">Register Now</button>
-    </div>
-
-    <!-- MODAL -->
-    <div class="modal-overlay" id="modal">
-        <div class="modal">
-            <span class="close js-close" onclick="closeModal()">×</span>
-            <h3>Register Free</h3>
-            <p class="msub">Run profitable Meta Ads with Claude AI</p>
-            <form id="leadForm" method="post" action="#">
-                <input type="text" name="full_name" placeholder="Full Name" required>
-                <input type="email" name="email" placeholder="Email Address" required>
-                <input type="tel" name="phone" inputmode="numeric" placeholder="Mobile No. (Don't add 0 or +91)" required>
-                <select name="profession" required>
-        <option value="" disabled selected>Select Profession</option>
-        <option value="D2C / E-commerce / Online Store">D2C / E-commerce / Online Store</option>
-        <option value="Ad Agency Owner">Ad Agency Owner</option>
-        <option value="Real Estate / Property">Real Estate / Property</option>
-        <option value="Healthcare / Wellness / Clinic">Healthcare / Wellness / Clinic</option>
-        <option value="Coaching / Training / Education">Coaching / Training / Education</option>
-        <option value="Retail / Shop (offline)">Retail / Shop (offline)</option>
-        <option value="Restaurant / Hospitality / Salon / Spa">Restaurant / Hospitality / Salon / Spa</option>
-        <option value="Freelancer / Consultant">Freelancer / Consultant</option>
-        <option value="Other Business Owner">Other Business Owner</option>
-        <option value="Marketing / Digital Marketing / Social Media">Marketing / Digital Marketing / Social Media</option>
-        <option value="Working Professional (Non-Marketing)">Working Professional (Non-Marketing)</option>
-        <option value="Currently Student">Currently Student</option>
-        <option value="Unemployed">Unemployed</option>
-        <option value="Other">Other</option>
-      </select>
-                <select name="age" required>
-        <option value="" disabled selected>Select your age group</option>
-        <option value="Under 21">Under 21</option>
-        <option value="21-25">21-25</option>
-        <option value="26-29">26-29</option>
-        <option value="30-50">30-50</option>
-        <option value="Above 50">Above 50</option>
-      </select>
-                <input type="hidden" name="workshop_name" value="Facebook & Instagram Ads">
-                <button class="btn full" id="leadSubmit" type="submit">Register Now — Free</button>
-            </form>
-            <p id="leadMsg" style="margin-top:8px;color:#d9534f;display:none"></p>
-            <div class="trust">
-                🔒 We respect your privacy. No spam.
-                <span>🎁 Bonus: 200+ Claude AI &amp; ChatGPT Prompts for Meta Ads</span>
-                <span>✅ 27,500+ professionals already attended</span>
-            </div>
-        </div>
+        <span class="price"><s>₹999</s> ₹199</span>
+        <a href="PASTE_YOUR_PAYMENT_LINK_HERE" class="btn">Buy Now</a>
     </div>
 
     <script>
@@ -1965,303 +695,21 @@
                 item.classList.toggle('open');
             });
         });
-
-        /* Modal open/close */
-        function openModal() {
-            document.getElementById('modal').classList.add('show');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeModal() {
-            document.getElementById('modal').classList.remove('show');
-            document.body.style.overflow = '';
-        }
-        document.getElementById('modal').addEventListener('click', function(e) {
-            if (e.target === this) closeModal();
-        });
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') closeModal();
-        });
-
-        /* js-open buttons — use event delegation so it catches dynamically added elements */
-        document.addEventListener('click', function(e) {
-            if (e.target.closest('.js-open')) openModal();
-        });
-
-        /* ===== Timer with localStorage persistence (15 min) ===== */
-        (function() {
-            const STORAGE_KEY = 'sn_timer_end_at_fb_claude';
-            const DURATION_MS = 15 * 60 * 1000;
-
-            function formatDateLong(d) {
-                return new Intl.DateTimeFormat('en-US', {
-                    year: 'numeric',
-                    month: 'long',
-                    day: '2-digit'
-                }).format(d);
-            }
-
-            function setTomorrowsDate() {
-                const now = new Date();
-                const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-                const text = 'midnight of ' + formatDateLong(today);
-                document.querySelectorAll('[data-date="tomorrow"], .js-tomorrow').forEach(function(el) {
-                    el.textContent = text;
-                });
-            }
-
-            function getOrInitEndTime() {
-                const now = Date.now();
-                const saved = localStorage.getItem(STORAGE_KEY);
-                if (saved) {
-                    const t = Number(saved);
-                    if (!Number.isNaN(t) && t > now) return t;
-                }
-                const end = now + DURATION_MS;
-                localStorage.setItem(STORAGE_KEY, String(end));
-                return end;
-            }
-            const pad2 = n => String(n).padStart(2, '0');
-
-            function renderTimers(diffMs) {
-                if (diffMs < 0) diffMs = 0;
-                const totalSec = Math.floor(diffMs / 1000);
-                const s = totalSec % 60;
-                const m = Math.floor(totalSec / 60) % 60;
-
-                // Sticky bar timer
-                const tMin = document.getElementById('t-min');
-                const tSec = document.getElementById('t-sec');
-                if (tMin) tMin.textContent = pad2(m);
-                if (tSec) tSec.textContent = pad2(s);
-
-                // Mobile sticky timer
-                const msMin = document.getElementById('ms-min');
-                const msSec = document.getElementById('ms-sec');
-                if (msMin) msMin.textContent = pad2(m);
-                if (msSec) msSec.textContent = pad2(s);
-            }
-
-            function start() {
-                setTomorrowsDate();
-                const endAt = getOrInitEndTime();
-                renderTimers(endAt - Date.now());
-                setInterval(function() {
-                    const diff = endAt - Date.now();
-                    renderTimers(diff);
-                }, 1000);
-            }
-
-            if (document.readyState === 'loading') {
-                document.addEventListener('DOMContentLoaded', start);
-            } else {
-                start();
-            }
-        })();
-
-        /* ===== Date fetch from fb-date.json ===== */
-        (async function() {
-            const URL = '/data/fb-date.json';
-            try {
-                const res = await fetch(URL, {
-                    cache: 'no-store'
-                });
-                if (!res.ok) throw new Error('HTTP ' + res.status);
-                const {
-                    shortdate,
-                    workshopDate,
-                    waLink
-                } = await res.json();
-
-                const dateMatch = workshopDate.match(/(\d{1,2})\s+([A-Za-z]{3})/);
-                const timeMatch = workshopDate.match(/(\d{1,2}:\d{2}\s*(?:am|pm)\s*IST)/i);
-
-                const dateNum = dateMatch ? dateMatch[1] : '';
-                const monthStr = dateMatch ? dateMatch[2].toUpperCase() : '';
-                const timeStr = timeMatch ? timeMatch[1] : '';
-
-                // Update any date elements on the page
-                const calDate = document.getElementById('fb-cal-date');
-                const calMonth = document.getElementById('fb-cal-month');
-                const heroDateLine = document.getElementById('fb-workshop-date');
-                const heroTimeLine = document.getElementById('fb-workshop-time');
-
-                if (calDate) calDate.textContent = dateNum;
-                if (calMonth) calMonth.textContent = monthStr;
-                if (heroDateLine && shortdate) heroDateLine.textContent = shortdate;
-                if (heroTimeLine && timeStr) heroTimeLine.textContent = timeStr;
-
-                const faqDateEl = document.getElementById('faqDate');
-                if (faqDateEl && workshopDate) faqDateEl.textContent = workshopDate;
-
-                const waEl = document.querySelector('[data-wa]');
-                if (waEl && waLink) waEl.href = waLink;
-            } catch (err) {
-                console.warn('Could not load workshop info:', err);
-            }
-        })();
-
-        /* ===== Form Submission with Lambda + localStorage ===== */
-        (function() {
-            const API_URL = 'https://ym21vnnqhd.execute-api.ap-south-1.amazonaws.com/default/free_workshop_meta';
-            const TY_URL = 'fb-ty-claude234.html';
-            const FORM_ID = 'leadForm';
-            const BTN_ID = 'leadSubmit';
-            const MSG_ID = 'leadMsg';
-            const WORKSHOP_NAME = 'Facebook & Instagram Ads';
-            const TIMEOUT_MS = 12000;
-
-            const form = document.getElementById(FORM_ID);
-            if (!form) return;
-
-            const submitBtn = document.getElementById(BTN_ID);
-            const msgEl = document.getElementById(MSG_ID);
-
-            function showMsg(text, ok) {
-                if (!msgEl) return;
-                msgEl.style.display = 'block';
-                msgEl.style.color = ok ? '#0a8f2b' : '#d9534f';
-                msgEl.textContent = text;
-            }
-
-            function clearMsg() {
-                if (msgEl) {
-                    msgEl.style.display = 'none';
-                    msgEl.textContent = '';
-                }
-            }
-
-            function normalizePhone(v) {
-                const d = (v || '').replace(/\D/g, '');
-                if (d.length >= 10) return d.slice(-10);
-                return d;
-            }
-
-            function validEmail(v) {
-                return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v || '');
-            }
-
-            function validPhone(v) {
-                return /^\d{10}$/.test(v || '');
-            }
-
-            function setBusy(b) {
-                if (!submitBtn) return;
-                submitBtn.disabled = b;
-                submitBtn.textContent = b ? 'Submitting…' : 'Register Now — Free';
-            }
-
-            function saveLeadLocal(lead) {
-                try {
-                    localStorage.setItem('lead_name', lead.name || '');
-                    localStorage.setItem('lead_email', lead.email || '');
-                    localStorage.setItem('lead_phone', lead.phone || '');
-                    localStorage.setItem('lead_profession', lead.profession || '');
-                    localStorage.setItem('lead_age', lead.age || '');
-                    localStorage.setItem('lead_workshop', lead.workshop_name || WORKSHOP_NAME);
-                    localStorage.setItem('lead_payload', JSON.stringify(lead));
-                } catch (e) { /* ignore */ }
-            }
-
-            async function sendToLambda(payload) {
-                const ctrl = new AbortController();
-                const t = setTimeout(() => ctrl.abort(), TIMEOUT_MS);
-                let res, data;
-                try {
-                    res = await fetch(API_URL, {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify(payload),
-                        signal: ctrl.signal
-                    });
-                } finally {
-                    clearTimeout(t);
-                }
-
-                try {
-                    data = await res.json();
-                } catch {
-                    data = null;
-                }
-
-                if (!res.ok) {
-                    const message = (data && (data.message || data.error)) || ('HTTP ' + res.status);
-                    throw new Error(message);
-                }
-                const received = data && (data.received ? ? data.body ? ? null);
-                if (!received || (typeof received === 'object' && Object.keys(received).length === 0)) {
-                    throw new Error('Server did not receive request body');
-                }
-                return data;
-            }
-
-            form.addEventListener('submit', async function(e) {
-                e.preventDefault();
-                clearMsg();
-
-                const fd = new FormData(form);
-                const name = (fd.get('full_name') || '').toString().trim();
-                const email = (fd.get('email') || '').toString().trim().toLowerCase();
-                const phone = normalizePhone(fd.get('phone') || '');
-                const profession = (fd.get('profession') || '').toString().trim();
-                const age = (fd.get('age') || '').toString().trim();
-                const workshop = (fd.get('workshop_name') || WORKSHOP_NAME).toString();
-
-                if (!name || !validEmail(email) || !validPhone(phone) || !profession || !age) {
-                    showMsg('Please enter valid name, email, 10-digit phone, profession and age.');
-                    return;
-                }
-
-                const payload = {
-                    name,
-                    email,
-                    phone,
-                    profession,
-                    age,
-                    workshop_name: workshop,
-                    referrer: document.referrer || '',
-                    page: location.href,
-                    ts: new Date().toISOString(),
-                    source: 'html-landing'
-                };
-
-                setBusy(true);
-                saveLeadLocal(payload);
-
-                try {
-                    await sendToLambda(payload);
-                    showMsg('Registered! Redirecting…', true);
-                    setTimeout(function() {
-                        window.location.href = TY_URL;
-                    }, 300);
-                } catch (err) {
-                    console.warn('❌ Submission failed:', err);
-                    showMsg('Submission failed. Please try again.', false);
-                } finally {
-                    setBusy(false);
-                }
-            });
-        })();
     </script>
 
-    <!-- ================= MOBILE STICKY FOOTER ================= -->
-    <div class="mobile-sticky" id="mobileSticky" data-deadline="">
+    <!-- MOBILE STICKY FOOTER -->
+    <div class="mobile-sticky" id="mobileSticky">
         <div class="ms-wrap">
             <div class="ms-left">
-                <div class="ms-label">Price increases in…</div>
-                <div class="ms-timer">
-                    <span id="ms-min">15</span><small>m</small> <span id="ms-sec">00</span><small>s</small>
-                </div>
+                <div class="ms-label">Price today</div>
+                <div class="ms-price"><s>₹999</s> ₹199</div>
             </div>
-            <div class="ms-cta js-open" role="button" tabindex="0" aria-label="Register Now">Register Now</div>
+            <a href="PASTE_YOUR_PAYMENT_LINK_HERE" class="ms-cta" aria-label="Buy Now">Buy Now</a>
         </div>
-        <div class="ms-note">Offer Valid Only For First 100 People!</div>
+        <div class="ms-note">Instant PDF Delivery · Bonuses Worth ₹2,000+</div>
     </div>
 
     <script>
-        // Add mobile sticky body padding
         (function() {
             var bar = document.getElementById('mobileSticky');
             if (bar) document.body.classList.add('has-mobile-sticky');
